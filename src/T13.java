@@ -1,9 +1,7 @@
 import java.util.Scanner;
 public class T13 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int left = sc.nextInt();
-        int right = sc.nextInt();
+        
         int[] arr=new int[10000];
         boolean[] isPrime = new boolean[104730];
         for (int i = 0; i < isPrime.length; i++) {
