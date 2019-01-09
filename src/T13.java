@@ -6,20 +6,17 @@ public class T13 {
         int right = sc.nextInt();
         int[] arr=new int[10000];
         boolean[] isPrime = new boolean[104730];
-        for (int i = 0; i < isPrime.length; i++) {
-            isPrime[i]=true;
-        }
         for (int i=2;i<isPrime.length;i++){
-            if (isPrime[i]){
+            if (!isPrime[i]){
                 for (int k=2;i*k<isPrime.length;k++){
-                    isPrime[i*k]=false;
+                    isPrime[i*k]=true;
                 }
             }
         }
         int n=0;
         int n1=1;
         for (int i=2;i<isPrime.length;i++) {
-            if (isPrime[i]){
+            if (!isPrime[i]){
                 arr[n]=i;
                 if (n==right-1){
                     for (int j = left-1; j < right-1; j++) {
