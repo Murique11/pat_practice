@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class T13 {
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+        int left = sc.nextInt();
+        int right = sc.nextInt();
         int[] arr=new int[10000];
         boolean[] isPrime = new boolean[104730];
         for (int i = 0; i < isPrime.length; i++) {
@@ -25,7 +27,7 @@ public class T13 {
                         if ( (n1-1)%10==0){
                             System.out.println(arr[j]);
                         }else
-                        System.out.print(arr[j]+" ");
+                            System.out.print(arr[j]+" ");
                     }
                     System.out.print(arr[right-1]);
                     break;
