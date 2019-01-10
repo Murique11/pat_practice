@@ -8,7 +8,6 @@ public class Reflect {
         ints.add(4);
         Class aClass = ints.getClass();
         aClass.getMethod("add", Object.class).invoke(ints,"你的88");
-
         System.out.println(ints);
     }
 }
