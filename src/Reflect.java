@@ -7,7 +7,8 @@ public class Reflect {
         ints.add(5);
         ints.add(4);
         Class aClass = ints.getClass();
-        aClass.getMethod("add", Object.class).invoke(ints,"你的88");
+        aClass.getMethod("add", Object.class).invoke(ints,"String");
+        ints.add(3);
         System.out.println(ints);
     }
 }
