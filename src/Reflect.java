@@ -9,6 +9,7 @@ public class Reflect {
         Class aClass = ints.getClass();
         aClass.getMethod("add", Object.class).invoke(ints,"String");
         ints.add(3);
+        ints.add(2);
         System.out.println(ints);
     }
 }
